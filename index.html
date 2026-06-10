@@ -1,80 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/fav.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="boostrap-global.css">
-    <title>La SEO</title>
-</head>
-<body>
-    <header>
-      <nav class="navbar navbar-expand-sm bg-blue py-3"> 
-       <div class="container-fluid">
-        
-        <a class="navbar-brand texte-orange fw-bold fs-5" href="index.html">
-            SEO EXPLORER
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Explorer - Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+    <link rel="stylesheet" href="bootstrap-global.css" />
+  </head>
 
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link texte-orange active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link texte-orange" href="approfondimento.html">Approfondimento</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link texte-orange" href="statistiche.html">Statistiche</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link texte-orange" href="workspace.html">Workspace</a>
-            </li>
-        </ul>
-        
-       </div>
-      </nav>
-
-        <div class="container-fluid px-0 ">
-            <img src="font.png" alt="SEO image keyword" class="img-fluid  w-100 banner-tagliato">
+  <body>
+    <div id="app" >
+      <header>
+        <div
+          class="d-flex justify-content-between align-items-center bg-blue px-2 px-sm-3"
+        >
+          <h1 class="mb-0 fs-6 fs-sm-4 fs-md-3 text-nowrap">🔍 SEO EXPLORER</h1>
+          <nav
+            class="navbar navbar-expand bg-blue py-2 py-sm-3 px-0"
+            role="navigation"
+             aria-label=" menu principale"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <router-link to="/" class="nav-link texte-orange px-1 px-sm-2"
+                  >Home</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/approfondimento"
+                  class="nav-link texte-orange px-1 px-sm-2"
+                  >Approfondimento</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/analisi"
+                  class="nav-link texte-orange px-1 px-sm-2"
+                  >Analisi</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/workspace"
+                  class="nav-link texte-orange px-1 px-sm-2"
+                  >Workspace</router-link>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-    </header>
+        <div class="container-fluid px-0">
+          <img
+            src="img/font.png"
+            alt="SEO image keyword"
+            class="img-fluid w-100 banner-tagliato"
+          />
+        </div>
+      </header>
 
-    <main>
-        <section  class="bg-blue text-white py-5">
-          <div class="container">
-            <div class="mb-5">
-                <h1>Cos'è la SEO?</h1>
-                <p>La SEO, o ottimizzazione per i motori di ricerca, è un insieme di tecniche volte a migliorare il posizionamento di un sito web nei risultati dei motori di ricerca, come Google. L'obiettivo principale della SEO è posizionare il tuo sito web in cima ai risultati di ricerca per parole chiave strategiche. Questo ti permette di attrarre traffico qualificato e organico al tuo sito.</p>
-            </div>
+      <main>
+        <router-view></router-view>
+      </main>
 
-            <div class="mb-5">
-                <h2>Ecco i 5 principali vantaggi di una strategia SEO:</h2>
-                <ul>
-                    <li><strong>Maggiore visibilità:</strong> il tuo sito compare tra i primi risultati di ricerca di Google.</li>
-                    <li><strong>Traffico mirato:</strong> attiri visitatori interessati ai tuoi contenuti, prodotti e servizi.</li>
-                    <li><strong>Pertinenza ottimale:</strong> le tue pagine rispondono in modo preciso alle query di ricerca degli utenti.</li>
-                    <li><strong>Miglior posizionamento:</strong> guadagni posizioni per le tue parole chiave prioritarie.</li>
-                    <li><strong>Prestazioni tecniche:</strong> il tuo sito diventa più veloce, meglio strutturato e più accessibile.</li>
-                </ul>
-            </div>
+     
+      <footer class="bg-orange texte-blue d-flex justify-content-center align-items-center py-4" role="contentinfo">
+        <p class="m-0">&copy; SEO EXPLORER - A.A 2025/2026</p>
+      </footer>
+    </div>
 
-            <div class="mb-5">
-                <h2>La SEO si basa su 3 pilastri</h2>
-                <ul>
-                    <li><strong>Ottimizzazione tecnica:</strong> include la struttura del sito, la sua velocità di caricamento, la sua compatibilità con i dispositivi mobili, ecc.</li>
-                    <li><strong>Ottimizzazione dei contenuti:</strong> il contenuto deve essere di alta qualità, originale, pertinente alle parole chiave target e ben strutturato.</li>
-                    <li><strong>Creazione di link (netlinking):</strong> i link provenienti da altri siti web rafforzano la credibilità del tuo sito agli occhi dei motori di ricerca.</li>
-                </ul>
-            </div>  
-          </div>
-        </section>
-        
-
-    </main>
-    <footer class="bg-orange text-blue text-center py-3">
-        <p>&copy; SEO EXPLORER - A.A 2025/2026</p>
-    </footer>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

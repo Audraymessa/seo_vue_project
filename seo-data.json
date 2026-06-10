@@ -1,0 +1,152 @@
+[
+  {
+    "termine": "SEO",
+    "definizione": "L'insieme di strategie per farsi trovare gratis su Google quando gli utenti cercano qualcosa.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Keyword",
+    "definizione": "La parola o la frase esatta che le persone digitano nella barra di ricerca di Google.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Googlebot",
+    "definizione": "Il software di Google (chiamato anche spider) che gira per internet alla ricerca di nuovi siti.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "SERP",
+    "definizione": "La pagina dei risultati di Google dove vengono elencati i siti web trovati dopo una ricerca.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "Alt Tag",
+    "definizione": "La descrizione testuale di un'immagine, fondamentale per i non vedenti e per la SEO.",
+    "livello": "Avanzato"
+  },
+  {
+    "termine": "Traffico Organico",
+    "definizione": "Le visite che arrivano al sito web in modo naturale e gratuito dai motori di ricerca.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Tag Semantici",
+    "definizione": "Tag HTML (come main o article) che spiegano al browser e a Google il significato del contenuto.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "Backlink",
+    "definizione": "Un collegamento ipertestuale che un sito esterno inserisce verso una pagina del tuo sito web.",
+    "livello": "Avanzato"
+  },
+  {
+    "termine": "Link Building",
+    "definizione": "La strategia che consiste nell'ottenere link da altri siti per aumentare l'autorevolezza del proprio.",
+    "livello": "Avanzato"
+  },
+  {
+    "termine": "Title Tag",
+    "definizione": "Il titolo principale di una pagina web che compare nei risultati di ricerca di Google.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Meta Description",
+    "definizione": "Il breve testo descrittivo che si legge su Google sotto il titolo di una pagina web.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Sitemap XML",
+    "definizione": "Una mappa in formato codice che elenca tutte le pagine del sito per aiutare Google a trovarle.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "File Robots.txt",
+    "definizione": "Un file di testo che dice ai bot di Google quali pagine del sito possono o non possono visitare.",
+    "livello": "Avanzato"
+  },
+  {
+    "termine": "Frequenza di Rimbalzo",
+    "definizione": "La percentuale di utenti che abbandona il sito dopo aver visitato una sola pagina senza interagire.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "Anchor Text",
+    "definizione": "La parola o la frase visibile e cliccabile sopra la quale viene inserito un link.",
+    "livello": "Base"
+  },
+  {
+    "termine": "SEO On-Page",
+    "definizione": "Tutte le ottimizzazioni fatte direttamente all'interno delle pagine del proprio sito web.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "SEO Off-Page",
+    "definizione": "Le attività di ottimizzazione svolte al di fuori del sito, come la gestione dei link esterni.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "Crawling",
+    "definizione": "Il processo con cui i motori di ricerca scansionano il web per scoprire nuovi contenuti.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Indicizzazione",
+    "definizione": "L'inserimento di una pagina web scansionata all'interno del gigantesco database di Google.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Ranking",
+    "definizione": "La posizione esatta che occupa un sito web nella pagina dei risultati di ricerca.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Intento di Ricerca",
+    "definizione": "Il vero motivo biologico o commerciale per cui un utente digita una frase su Google.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "Internal Linking",
+    "definizione": "L'uso di collegamenti ipertestuali che collegano tra loro diverse pagine dello stesso sito.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Errore 404",
+    "definizione": "Il codice di errore mostrato quando una pagina web non esiste più o l'indirizzo è sbagliato.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Redirect 301",
+    "definizione": "Un reindirizzamento permanente che sposta automaticamente gli utenti da un vecchio URL a uno nuovo.",
+    "livello": "Avanzato"
+  },
+  {
+    "termine": "Canonical Tag",
+    "definizione": "Un codice che dice a Google qual è la pagina ufficiale per evitare problemi di contenuti duplicati.",
+    "livello": "Avanzato"
+  },
+  {
+    "termine": "Core Web Vitals",
+    "definizione": "Metriche di Google che misurano la velocità di caricamento e la stabilità visiva di una pagina.",
+    "livello": "Avanzato"
+  },
+  {
+    "termine": "Responsive Design",
+    "definizione": "La capacità di un sito di adattarsi graficamente a schermi di ogni dimensione, come gli smartphone.",
+    "livello": "Base"
+  },
+  {
+    "termine": "HTTPS",
+    "definizione": "Il protocollo di sicurezza che cripta i dati scambiati tra il sito e l'utente, amato da Google.",
+    "livello": "Intermedio"
+  },
+  {
+    "termine": "Tag Heading",
+    "definizione": "I titoli gerarchici interni a un testo (da H1 a H6) usati per organizzare i paragrafi.",
+    "livello": "Base"
+  },
+  {
+    "termine": "Schema Markup",
+    "definizione": "Codice speciale aggiunto al sito per aiutare Google a mostrare informazioni extra nei risultati.",
+    "livello": "Avanzato"
+  }
+]
