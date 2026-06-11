@@ -46,7 +46,7 @@ h2, h3 {
     color: #ff4500 !important;
 }
 
-.texte-orange:hover {
+a.texte-orange:hover {
     color: #ff983f !important; /* Un orange un peu plus clair pour montrer qu'on peut cliquer */
 }
 

@@ -1,8 +1,8 @@
 const Home = {
   template: `
-         <section class="bg-blue text-white py-5">
+         <section class="bg-blue text-white  py-5">
         <div class="container">
-          <div class="mb-5">
+          <div class="mb-5 ">
             <h2>Cos'è la SEO?</h2>
             <p>
               La SEO <strong>(Search Engine Optimization)</strong>, o
@@ -187,9 +187,9 @@ const Home = {
 const Approfondimenti = {
   template: `
    <section class="bg-blue text-white py-5">
-            <div class="container"></div>
-                <div class="container mt-4">
-                    <h2 class="text-center">Strategie Avanzate e Tecniche SEO</h2>
+            <div class="container ">
+                <div class="container mb-5">
+                    <h2 class="fw-bold text-center mb-3">Strategie Avanzate e Tecniche SEO</h2>
                     <p>Per ragguingere l'obiettivo di vedere il nostro sito visibile in primo posto nelle recommandazione, la SEO si divide in 3 pilastri fondamentali. Se ne manca anche solo uno, il sito farà fatica a posizionarsi. Vediamoli nel dettaglio.</p>
                 </div>
             
@@ -266,15 +266,15 @@ const Analisi = {
       });
   },
   template: `
-   <section class="container-fluid animate_animated animate_fadeIn">
-            <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <h2 class="texte-orange mt-4">Analisi Metriche SEO</h2>
+   <section class="container-fluid animate_animated animate_fadeIn py-5">
+            <div class="row ">
+                <div class="col-12 text-center ">
+                    <h2 class="texte-orange ">Analisi Metriche SEO</h2>
                     <p>Esplora il nostro glossario interattivo con righe e colonne evidenziate.</p>
                 </div>
             </div>
 
-            <div v-if="loading" class="text-center p-5">
+            <div v-if="loading" class="text-center p-5 ">
                 <div class="spinner-border text-warning" role="status"></div>
                 <p class="mt-2">Caricamento dei 30 termini in corso...</p>
             </div>
@@ -313,16 +313,150 @@ const Analisi = {
   `
 };
 
-// 1. ECCO IL COMPONENTE MANCANTE AGGIUNTO
+
 const Workspace = {
+  data() {
+    return {
+      // Array principale che conterrà i tuoi termini SEO
+      termini: [],
+      
+      // Variabili collegate agli input del form per l'aggiunta
+      inputKeyword: '',
+      inputDescrizione: '',
+      inputLivello: 'Base' // Valore di default pre-selezionato
+    }
+  },
+
+  methods: {
+    salvaDatiNelLocalStorage() {
+      // Salva l'array aggiornato nella memoria del browser
+      const terminiString = JSON.stringify(this.termini);
+      localStorage.setItem('glossarioSEO', terminiString);
+    },
+
+    aggiungiTermine() { 
+      // Controlla che i campi non siano vuoti prima di aggiungere
+      if(this.inputKeyword.trim() === '' || this.inputDescrizione.trim() === '') {
+          alert("Inserisci sia la keyword che la descrizione!");
+          return;
+      }
+
+      // Aggiunge il nuovo termine all'array
+      this.termini.push({ 
+        keyword: this.inputKeyword,
+        descrizione: this.inputDescrizione,
+        livello: this.inputLivello
+      });
+      
+      this.salvaDatiNelLocalStorage();
+
+      // Pulisce i campi del form dopo l'inserimento
+      this.inputKeyword = '';
+      this.inputDescrizione = '';
+      this.inputLivello = 'Base';
+    },
+
+    modifica(index) {
+      // Richiede i nuovi dati all'utente mostrando quelli vecchi come suggerimento
+      const nuovaKeyword = prompt("Modifica Keyword:", this.termini[index].keyword);
+      const nuovaDescrizione = prompt("Modifica Descrizione:", this.termini[index].descrizione);
+      const nuovoLivello = prompt("Modifica Livello (Base, Intermedio, Avanzato):", this.termini[index].livello);
+      
+      // Aggiorna solo se l'utente non ha cliccato "Annulla"
+      if(nuovaKeyword !== null) this.termini[index].keyword = nuovaKeyword;
+      if(nuovaDescrizione !== null) this.termini[index].descrizione = nuovaDescrizione;
+      if(nuovoLivello !== null) this.termini[index].livello = nuovoLivello;
+
+      this.salvaDatiNelLocalStorage();
+    },
+      
+    elimina(index) {
+      // Chiede conferma prima di cancellare
+      if(confirm("Sei sicuro di voler eliminare questo termine?")) {
+          this.termini.splice(index, 1);
+          this.salvaDatiNelLocalStorage();
+      }
+    },
+
+    caricaDatiDalLocalStorage() {
+      const datiSalvati = localStorage.getItem('glossarioSEO');
+      if (datiSalvati) {
+        this.termini = JSON.parse(datiSalvati);
+      } else {
+        // Se non c'è nulla salvato, crea un array vuoto
+        this.termini = [];
+      }
+    }
+  },
+
+  mounted() {
+    // Appena si apre la pagina Workspace, carica i dati salvati
+    this.caricaDatiDalLocalStorage();
+  },
   template: `
     <section class="container py-5">
-      <h2>Workspace</h2>
-      <p>Contenuto in arrivo...</p>
+      <h2 class="fw-bold text-center mb-4 ">Workspace: Gestione Glossario</h2>
+      
+      <form class="w-75 mx-auto bg-light p-4 rounded shadow-sm border border-2 mb-5" @submit.prevent="aggiungiTermine">
+        <h4 class="mb-3 texte-blue">Aggiungi nuovo termine</h4>
+        
+        <div class="mb-3">
+          <label for="keyword" class="form-label fw-bold">Keyword:</label>
+          <input type="text" class="form-control" id="keyword" placeholder="Es. Backlink" v-model="inputKeyword" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="descrizione" class="form-label fw-bold">Descrizione:</label>
+          <textarea class="form-control" id="descrizione" rows="2" placeholder="Inserisci la definizione..." v-model="inputDescrizione" required></textarea>
+        </div>
+        
+        <div class="mb-3">
+          <label for="livello" class="form-label fw-bold">Livello di difficoltà:</label>
+          <select class="form-select" id="livello" v-model="inputLivello">
+            <option value="Base">Base</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzato">Avanzato</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100 bg-orange border-0 shadow-sm">Aggiungi al Glossario</button>
+      </form>
+
+      <h4 class="mb-3 texte-blue">Termini Salvati</h4>
+      <div class="table-responsive shadow-sm rounded">
+        <table class="table table-striped table-hover align-middle mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th>N°</th>
+              <th style="width: 20%;">Keyword</th>
+              <th style="width: 40%;">Descrizione</th>
+              <th style="width: 15%;">Livello</th>
+              <th style="width: 25%; text-align: center;">Azioni</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-if="termini.length === 0">
+              <td colspan="5" class="text-center text-muted py-4">Nessun termine inserito. Inizia ad aggiungerne uno!</td>
+            </tr>
+            
+            <tr v-for="(termine, index) in termini" :key="index">
+              <td class="fw-bold">{{ index + 1 }}</td>
+              <td class="fw-bold text-dark">{{ termine.keyword }}</td>
+              <td>{{ termine.descrizione }}</td>
+              <td>
+                 <span class="badge bg-secondary">{{ termine.livello }}</span>
+              </td>
+              <td class="text-center">
+                <button type="button" class="btn btn-sm btn-outline-primary me-2" @click="modifica(index)">✏️ Modifica</button>
+                <button type="button" class="btn btn-sm btn-outline-danger" @click="elimina(index)">🗑️ Elimina</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   `
 };
-
 
 
 const routes = [
