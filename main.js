@@ -229,6 +229,55 @@ const Approfondimenti = {
                     </p>
                     <img src="img/SEO Off-page.png" alt="Spiegazione della seo Off-page" class="img-fluid">
                 </div>
+                <div class="container mt-4" role="region">
+                  <h3>L'impatto dell'accessibilità sulla SEO</h3>
+                  <p>
+                    Nel panorama digitale odierno, l'accessibilità non è più soltanto una buona pratica o un requisito etico: è un vero e proprio fattore strategico per la visibilità online. 
+                    L'intersezione tra accessibilità web e ottimizzazione per i motori di ricerca (SEO) si fa sempre più concreta, a testimonianza di un'evoluzione del web orientata all'inclusività e alla qualità dell'esperienza utente.
+                  </p>
+                  <p>
+                  Ecco come le pratiche che aiutano gli utenti con disabilità migliorano direttamente il nostro posizionamento su Google:
+                  </p>
+                  <ol class="list-unstyled d-flex flex-column gap-4">
+                    <li class="card p-3 shadow-sm border-0 bg-light">
+                      <h4 class="fs-5 text-dark mb-2"> 1. Testo Alternativo delle immagini(Alt attribute) </h4>
+                      <p class="mb-0 text-body">
+                        Per l'Accessibilità: Lo screen reader legge il testo alternativo per descrivere l'immagine a un utente non vedente.
+                      </p>
+                      <p class="mb-0 text-body">
+                        Per la SEO: Google non può "vedere" il contenuto visivo di una foto. Usa il testo alt per capire cosa c'è nell'immagine e indicizzarla correttamente su Google Immagini.
+                      </p>
+                    </li>
+                    <li class="card p-3 shadow-sm border-0 bg-light">
+                      <h4 class="fs-5 text-dark mb-2"> 2. Struttura dei titoli (h1, h2, h3 atributes) </h4>
+                      <p class="mb-0 text-body">
+                        Per l'Accessibilità: Gli utenti ipovedenti usano i titoli per saltare da una sezione all'altra della pagina e capire la gerarchia dei contenuti senza dover leggere tutto.
+                      </p>
+                      <p class="mb-0 text-body">
+                        Per la SEO: Google usa l'ordine logico dei titoli (un solo H1, seguito da H2 e H3) per comprendere l'argomento principale della pagina e l'importanza dei vari sotto-argomenti.
+                      </p>
+                    </li>
+                    <li class="card p-3 shadow-sm border-0 bg-light">
+                      <h4 class="fs-5 text-dark mb-2"> 3. Testo dei link chiaro (No al "Clicca qui") </h4>
+                      <p class="mb-0 text-body">
+                        Per l'Accessibilità: Sentire uno screen reader che dice "Clicca qui, Clicca qui, Clicca qui" è frustrante perché non dà contesto. I link devono essere descrittivi (es. "Scarica il report SEO 2026").
+                      </p>
+                      <p class="mb-0 text-body">
+                        Per la SEO: Google usa il testo del link (anchor text) per capire di cosa tratta la pagina di destinazione. Un anchor text descrittivo distribuisce il "valore SEO" in modo molto più efficace.
+                      </p>
+                    </li>
+                    <li class="card p-3 shadow-sm border-0 bg-light">
+                      <h4 class="fs-5 text-dark mb-2"> 4. Gli attributi ARIA (aria-current, aria-label) </h4>
+                      <p class="mb-0 text-body">
+                        Per l'Accessibilità: Come abbiamo visto per il nostro menu, informano lo screen reader su quale sia la pagina attiva o sul ruolo di un elemento (es. aria-label="Navigation principale").
+                      </p>
+                      <p class="mb-0 text-body">
+                        Per la SEO: Aiutano i bot di Google a comprendere l'architettura tecnica del tuo sito, riducendo gli errori di scansione e migliorando l'indicizzazione delle parti fondamentali (come i menu).
+                      </p>
+                    </li>
+                  </ol>
+                  
+                </div>
             </div>
         </section>
   `
