@@ -5,40 +5,55 @@ const Home = {
           <div class="mb-5 ">
             <h2>Cos'è la SEO?</h2>
             <p>
-              La SEO <strong>(Search Engine Optimization)</strong>, o
-              ottimizzazione per i motori di ricerca, è un insieme di tecniche
-              volte a migliorare il posizionamento di un sito web nei risultati
-              dei motori di ricerca, come Google. L'obiettivo principale della
-              SEO è posizionare il tuo sito web in cima ai risultati di ricerca
-              per parole chiave strategiche. Questo ti permette di attrarre
-              traffico qualificato e organico al tuo sito.
+            <strong>La SEO (Search Engine Optimization)</strong>, o ottimizzazione per i motori di ricerca, non è solo un insieme di tecniche informatiche, ma una vera e propria strategia digitale a lungo termine. Il suo scopo fondamentale è migliorare la visibilità e il posizionamento di un sito web tra i risultati organici (ovvero quelli non a pagamento) dei motori di ricerca come Google.
+            L'obiettivo principale della SEO non si limita al semplice "essere in prima pagina", ma consiste nel posizionare in modo mirato le tue pagine web per parole chiave strategiche strettamente legate al tuo settore. Quando questo processo viene eseguito correttamente, il tuo sito si trasforma in una calamita capace di attrarre traffico altamente qualificato. Questo significa intercettare un pubblico specifico che sta cercando attivamente una soluzione, un prodotto o un'informazione che tu sei in grado di offrire, esattamente nel momento in cui ne ha più bisogno.
+            Per fare un esempio pratico: se stai lanciando una piattaforma come expoMatch (piattaforma b2b che permette di collegare Artigiani e oragizzatori di eventi), una strategia SEO efficace non punterà a posizionarti per parole generiche e inutili come "app", ma lavorerà per farti comparire tra i primissimi risultati quando un utente digita query specifiche come "app per organizzatori di eventi e artigiani". In quel preciso istante, la tua pagina diventa la risposta perfetta a un bisogno reale.
             </p>
           </div>
 
           <div class="mb-5">
-            <h2>Ecco i 5 principali vantaggi di una strategia SEO:</h2>
-            <ul>
-              <li>
-                <strong>Maggiore visibilità:</strong> il tuo sito compare tra i
-                primi risultati di ricerca di Google.
+            <h2>Principali vantaggi di una strategia SEO:</h2>
+            <ol class="texte-orange" >
+              <li class="mb-3" >
+               <strong>Maggiore visibilità: Il tuo sito compare tra i primi risultati di Google</strong> 
+               <p class="text-white mt-2">Essere visibili significa esistere digitalmente. La stragrande maggioranza degli utenti non va mai oltre la prima pagina dei risultati di Google (la cosiddetta SERP).</p>
+                <ul class="text-white">
+                  <li><strong>Il concetto chiave:</strong> Non si tratta solo di esserci, ma di intercettare un bisogno latente. Quando le persone cercano attivamente una soluzione, non stanno scorrendo passivamente un feed social; hanno un'intenzione chiara.</li>
+                  <li><strong>Un esempio pratico:</strong> Immagina il lancio di expoMatch nel 2026. Quando gli organizzatori di eventi o gli artigiani cercheranno su Google "app per organizzatori di eventi e artigiani" o "gestione espositori fiera", essere nella prima pagina garantirà alla piattaforma una visibilità enorme proprio nel momento in cui quelle persone hanno disperatamente bisogno di quello strumento, senza dover pagare per ogni singolo clic (come avviene invece con le sponsorizzate).</li>
+                </ul>
               </li>
-              <li>
-                <strong>Traffico mirato:</strong> attiri visitatori interessati
-                ai tuoi contenuti, prodotti e servizi.
+              <li class="mb-3">
+                <strong>Traffico mirato: Attiri visitatori interessati</strong> 
+                <p class="text-white mt-2">Avere 10.000 visitatori al mese è inutile se nessuno di loro è interessato a ciò che offri. La SEO lavora sulla qualità del traffico, non solo sulla quantità.</p>
+                <ul class="text-white">
+                  <li><strong>Il concetto chiave:</strong> Le parole chiave (keyword) agiscono come un filtro. L'ottimizzazione ti permette di attrarre un pubblico "caldo", ovvero utenti che sono già a metà del percorso decisionale.</li>
+                  <li><strong>Un esempio pratico:</strong> Per la promozione di una linea come Moramore Jewels, posizionarsi per una parola chiave generica come "collane" porterebbe traffico inutile. Lavorare su keyword a coda lunga (long-tail) come "gioielli in acciaio inossidabile resistenti all'acqua" attira esattamente clienti che cercano materiali durevoli e anallergici e che hanno già scartato altre opzioni (come il rame o le leghe a basso costo). Questo si traduce in un tasso di conversione (vendite) nettamente superiore.</li>
+                </ul>
               </li>
-              <li>
-                <strong>Pertinenza ottimale:</strong> le tue pagine rispondono
-                in modo preciso alle query di ricerca degli utenti.
+              <li class="mb-3">
+                <strong>Pertinenza ottimale: Le tue pagine rispondono in modo preciso</strong> 
+                <p class="text-white mt-2">L'algoritmo di Google premia i siti che danno la risposta migliore e più veloce all'utente. Questo concetto si chiama Search Intent (Intento di Ricerca).</p>
+                <ul class="text-white">
+                  <li><strong>Il concetto chiave:</strong> Esistono intenti informativi (es. "come pulire una palestra"), navigazionali (es. "login Sparkle Servizi") o transazionali (es. "preventivo lavasciuga industriale"). La SEO fa in modo che ogni tua pagina sia costruita per rispondere esattamente a uno di questi intenti.</li>
+                  <li><strong>Un esempio pratico:</strong> Se un utente cerca i protocolli di sanificazione per gli impianti sportivi, e la tua pagina offre un articolo dettagliato, chiaro e professionale su questo esatto argomento, Google ti premierà facendoti salire di posizione, perché hai fornito esattamente l'informazione pertinente che l'utente desiderava in quel momento.</li>
+                </ul>
               </li>
-              <li>
-                <strong>Miglior posizionamento:</strong> guadagni posizioni per
-                le tue parole chiave prioritarie.
+              <li class="mb-3">
+                <strong>Miglior posizionamento: Guadagni posizioni per le tue parole chiave</strong> 
+                <p class="text-white mt-2">Il posizionamento non è statico, è una gara continua contro i tuoi competitor.</p>
+                <ul class="text-white">
+                  <li><strong>Il concetto chiave:</strong> Guadagnare posizioni (passare, ad esempio, dal 12° al 3° posto) richiede un lavoro combinato di autorevolezza (ricevere link da altri siti affidabili) e contenuti di altissima qualità (il principio E-E-A-T: Esperienza, Competenza, Autorevolezza, Affidabilità).</li>
+                  <li><strong>Il vantaggio:</strong> Salire dal fondo della prima pagina ai primissimi tre posti significa moltiplicare esponenzialmente il traffico. Il primo risultato su Google si prende in media circa il 30% di tutti i clic disponibili per quella ricerca.</li>
+                </ul>
               </li>
-              <li>
-                <strong>Prestazioni tecniche:</strong> il tuo sito diventa più
-                veloce, meglio strutturato e più accessibile.
+              <li class="mb-3">
+                <strong>Prestazioni tecniche: Il tuo sito diventa più veloce e accessibile</strong> 
+                <p class="text-white mt-2">La SEO non è solo testo, è anche architettura. Come vedremmo nei concetti della Technical SEO, Google detesta i siti lenti, pesanti o che si vedono male sui telefoni.</p>
+                <ul class="text-white">
+                  <li><strong>Il concetto chiave:</strong> L'ottimizzazione per i motori di ricerca ti "costringe" a scrivere un codice migliore. Questo processo riduce i tempi di caricamento, ottimizza il peso delle immagini, struttura il DOM in modo logico e garantisce la perfetta navigazione da mobile (Mobile-First Indexing).</li>
+                  <li><strong>Il vantaggio:</strong> Un sito tecnicamente perfetto non solo piace a Googlebot, ma riduce drasticamente il Bounce Rate (la frequenza di rimbalzo, ovvero le persone che abbandonano il sito perché non si carica abbastanza in fretta), migliorando l'esperienza di ogni singolo visitatore.</li>
               </li>
-            </ul>
+            </ol>
           </div>
 
           <div class="mb-5">
@@ -253,7 +268,7 @@ const Analisi = {
   mounted() {
     fetch('seo-data.json')
       .then(response => {
-        if (!response.ok)  throw new Error();
+        if (!response.ok)  throw new Error('Errore nel caricamento del file: ' );
         return response.json();
       })
       .then(data => {
