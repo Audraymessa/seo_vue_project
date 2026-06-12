@@ -60,7 +60,7 @@ a.texte-orange:hover {
 }
 
 /* Corretto: applica il testo giustificato solo al contenuto principale, non al footer */
-main p {
+p {
     text-align: justify;
 }
  
