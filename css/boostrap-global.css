@@ -1,0 +1,68 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* usato per tagliare tutto ciò che sporge orizzontalmente*/
+}
+
+h1 {
+    color: orangered;
+    font-weight: 700;
+}
+
+/* Corretto: rimossa la ripetizione di h2 */
+h2, h3 {
+    color: #ff4500;
+    font-weight: 700;           
+}
+
+.banner-tagliato { 
+  /* Imposta l'altezza massima a metà rispetto a prima  */
+  height: 300px; 
+  /* Taglia l'immagine in eccesso senza deformarla */
+  object-fit: cover; 
+  /* Scegli quale parte mantenere: 'center' mantiene il centro,  */
+  object-position: center; 
+}
+
+/* Ottimizzazione Mobile-First: sullo schermo piccolo del telefono lo tagliamo ancora un po' */
+@media (max-width: 567px) {
+  .banner-tagliato {
+    height: 120px; 
+  }
+}
+
+@media (max-width: 567px) {
+  .navbar-nav .nav-link {
+    font-size: 0.75rem !important; /* Usato per render i link leggermente più piccoli */
+    padding-left: 2px !important; /* usato per stringere al massimo i link */
+    padding-right: 2px !important;
+  }
+}
+
+.bg-blue {
+    background-color: #0a1931 !important;
+}
+
+.texte-orange {
+    color: #ff4500 !important;
+}
+
+a.texte-orange:hover {
+    color: #ff983f !important; /* Un orange un peu plus clair pour montrer qu'on peut cliquer */
+}
+
+.bg-orange {
+    background-color: #ff4500 !important;
+}
+
+/* Corretto: aggiunto il punto mancante per indicare che è una classe */
+.texte-blue {
+    color: #0a1931 !important;
+}
+
+/* Corretto: applica il testo giustificato solo al contenuto principale, non al footer */
+p {
+    text-align: justify;
+}
+ 
+li {
+    text-align: justify;}
